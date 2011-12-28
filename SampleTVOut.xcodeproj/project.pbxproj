@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		964C79B414AB61930087C439 /* TTMonitorOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 964C79B314AB61930087C439 /* TTMonitorOut.m */; };
+		9655019614912D29001D7E80 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9655019514912D29001D7E80 /* UIKit.framework */; };
+		9655019814912D29001D7E80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9655019714912D29001D7E80 /* Foundation.framework */; };
+		9655019A14912D29001D7E80 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9655019914912D29001D7E80 /* CoreGraphics.framework */; };
+		965501A014912D2A001D7E80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9655019E14912D2A001D7E80 /* InfoPlist.strings */; };
+		965501A214912D2A001D7E80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 965501A114912D2A001D7E80 /* main.m */; };
+		965501A614912D2A001D7E80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 965501A514912D2A001D7E80 /* AppDelegate.m */; };
+		965501A914912D2A001D7E80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 965501A814912D2A001D7E80 /* ViewController.m */; };
+		965501AC14912D2A001D7E80 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965501AA14912D2A001D7E80 /* ViewController_iPhone.xib */; };
+		965501AF14912D2A001D7E80 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965501AD14912D2A001D7E80 /* ViewController_iPad.xib */; };
+		965501D114912F14001D7E80 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965501D014912F14001D7E80 /* MapKit.framework */; };
+		965501DB14913055001D7E80 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965501DA14913055001D7E80 /* MediaPlayer.framework */; };
+		965501F8149153AE001D7E80 /* MyMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 965501F7149153AE001D7E80 /* MyMovieViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		964C79B214AB61930087C439 /* TTMonitorOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMonitorOut.h; sourceTree = "<group>"; };
+		964C79B314AB61930087C439 /* TTMonitorOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMonitorOut.m; sourceTree = "<group>"; };
+		9655019114912D29001D7E80 /* SampleTVOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleTVOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9655019514912D29001D7E80 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9655019714912D29001D7E80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9655019914912D29001D7E80 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9655019D14912D2A001D7E80 /* SampleTVOut-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleTVOut-Info.plist"; sourceTree = "<group>"; };
+		9655019F14912D2A001D7E80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		965501A114912D2A001D7E80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		965501A314912D2A001D7E80 /* SampleTVOut-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleTVOut-Prefix.pch"; sourceTree = "<group>"; };
+		965501A414912D2A001D7E80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		965501A514912D2A001D7E80 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		965501A714912D2A001D7E80 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		965501A814912D2A001D7E80 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		965501AB14912D2A001D7E80 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		965501AE14912D2A001D7E80 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		965501D014912F14001D7E80 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		965501DA14913055001D7E80 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		965501F6149153AE001D7E80 /* MyMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMovieViewController.h; sourceTree = "<group>"; };
+		965501F7149153AE001D7E80 /* MyMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMovieViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9655018E14912D29001D7E80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965501DB14913055001D7E80 /* MediaPlayer.framework in Frameworks */,
+				965501D114912F14001D7E80 /* MapKit.framework in Frameworks */,
+				9655019614912D29001D7E80 /* UIKit.framework in Frameworks */,
+				9655019814912D29001D7E80 /* Foundation.framework in Frameworks */,
+				9655019A14912D29001D7E80 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		964C79B114AB61930087C439 /* TTMonitorOut */ = {
+			isa = PBXGroup;
+			children = (
+				964C79B214AB61930087C439 /* TTMonitorOut.h */,
+				964C79B314AB61930087C439 /* TTMonitorOut.m */,
+			);
+			path = TTMonitorOut;
+			sourceTree = SOURCE_ROOT;
+		};
+		9655018614912D29001D7E80 = {
+			isa = PBXGroup;
+			children = (
+				9655019B14912D29001D7E80 /* SampleTVOut */,
+				9655019414912D29001D7E80 /* Frameworks */,
+				9655019214912D29001D7E80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9655019214912D29001D7E80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9655019114912D29001D7E80 /* SampleTVOut.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9655019414912D29001D7E80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				965501DA14913055001D7E80 /* MediaPlayer.framework */,
+				965501D014912F14001D7E80 /* MapKit.framework */,
+				9655019514912D29001D7E80 /* UIKit.framework */,
+				9655019714912D29001D7E80 /* Foundation.framework */,
+				9655019914912D29001D7E80 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9655019B14912D29001D7E80 /* SampleTVOut */ = {
+			isa = PBXGroup;
+			children = (
+				964C79B114AB61930087C439 /* TTMonitorOut */,
+				965501EC14914A23001D7E80 /* ExternalView */,
+				965501A414912D2A001D7E80 /* AppDelegate.h */,
+				965501A514912D2A001D7E80 /* AppDelegate.m */,
+				965501A714912D2A001D7E80 /* ViewController.h */,
+				965501A814912D2A001D7E80 /* ViewController.m */,
+				965501AA14912D2A001D7E80 /* ViewController_iPhone.xib */,
+				965501AD14912D2A001D7E80 /* ViewController_iPad.xib */,
+				9655019C14912D2A001D7E80 /* Supporting Files */,
+			);
+			path = SampleTVOut;
+			sourceTree = "<group>";
+		};
+		9655019C14912D2A001D7E80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9655019D14912D2A001D7E80 /* SampleTVOut-Info.plist */,
+				9655019E14912D2A001D7E80 /* InfoPlist.strings */,
+				965501A114912D2A001D7E80 /* main.m */,
+				965501A314912D2A001D7E80 /* SampleTVOut-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		965501EC14914A23001D7E80 /* ExternalView */ = {
+			isa = PBXGroup;
+			children = (
+				965501F6149153AE001D7E80 /* MyMovieViewController.h */,
+				965501F7149153AE001D7E80 /* MyMovieViewController.m */,
+			);
+			path = ExternalView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9655019014912D29001D7E80 /* SampleTVOut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 965501B214912D2A001D7E80 /* Build configuration list for PBXNativeTarget "SampleTVOut" */;
+			buildPhases = (
+				9655018D14912D29001D7E80 /* Sources */,
+				9655018E14912D29001D7E80 /* Frameworks */,
+				9655018F14912D29001D7E80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleTVOut;
+			productName = SampleTVOut;
+			productReference = 9655019114912D29001D7E80 /* SampleTVOut.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9655018814912D29001D7E80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 9655018B14912D29001D7E80 /* Build configuration list for PBXProject "SampleTVOut" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9655018614912D29001D7E80;
+			productRefGroup = 9655019214912D29001D7E80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9655019014912D29001D7E80 /* SampleTVOut */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9655018F14912D29001D7E80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965501A014912D2A001D7E80 /* InfoPlist.strings in Resources */,
+				965501AC14912D2A001D7E80 /* ViewController_iPhone.xib in Resources */,
+				965501AF14912D2A001D7E80 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9655018D14912D29001D7E80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965501A214912D2A001D7E80 /* main.m in Sources */,
+				965501A614912D2A001D7E80 /* AppDelegate.m in Sources */,
+				965501A914912D2A001D7E80 /* ViewController.m in Sources */,
+				965501F8149153AE001D7E80 /* MyMovieViewController.m in Sources */,
+				964C79B414AB61930087C439 /* TTMonitorOut.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9655019E14912D2A001D7E80 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9655019F14912D2A001D7E80 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		965501AA14912D2A001D7E80 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				965501AB14912D2A001D7E80 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		965501AD14912D2A001D7E80 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				965501AE14912D2A001D7E80 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		965501B014912D2A001D7E80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		965501B114912D2A001D7E80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		965501B314912D2A001D7E80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SampleTVOut/SampleTVOut-Prefix.pch";
+				INFOPLIST_FILE = "SampleTVOut/SampleTVOut-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		965501B414912D2A001D7E80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SampleTVOut/SampleTVOut-Prefix.pch";
+				INFOPLIST_FILE = "SampleTVOut/SampleTVOut-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9655018B14912D29001D7E80 /* Build configuration list for PBXProject "SampleTVOut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965501B014912D2A001D7E80 /* Debug */,
+				965501B114912D2A001D7E80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		965501B214912D2A001D7E80 /* Build configuration list for PBXNativeTarget "SampleTVOut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965501B314912D2A001D7E80 /* Debug */,
+				965501B414912D2A001D7E80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9655018814912D29001D7E80 /* Project object */;
+}
