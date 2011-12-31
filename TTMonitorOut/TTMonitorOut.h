@@ -49,6 +49,12 @@ UIScreen Class Reference. For information about screen modes, see UIScreenMode C
 
 @protocol TTMonitorOutDelegate;
 
+/** Support for External Displays and Projectors
+ 
+ Allows for sending a view to an external display such as a TV or Projector via a connected cable, or using AirPlay Mirroring.  Currently picks the best output the display registers and shows the view on that display.
+ 
+ @warning One should take into account that the view you are sending will be displayed on a larger screen and allowing to resize your view will offer a much better experiance on the external display
+ */
 @interface TTMonitorOut : NSObject
 {
 	id <TTMonitorOutDelegate>	delegate;
@@ -60,26 +66,68 @@ UIScreen Class Reference. For information about screen modes, see UIScreenMode C
 	UIWindow					*externalWindow;
 }
 
+
 @property (nonatomic, assign) id <TTMonitorOutDelegate> delegate;
 @property (nonatomic, retain) UIViewController	*externalViewController;
 @property (nonatomic, retain) UIView			*externalView;
 
+///---------------------------------------------------------------------------------------
+/// @name Initialization & disposal
+///---------------------------------------------------------------------------------------
+
+/** Initializes the Display with a Given UIView
+ 
+ @param aView The UIView to send on external display.
+ @return Returns initialized object.
+ */
 - (id)initWithView:(UIView *)aView;
-- (id)initWithView:(UIView  *)aView delegate:(id<TTMonitorOutDelegate>)adelegate;
+
+/** Initializes the Display with a Given UIView
+ 
+ @param aView The UIView to send on external display.
+ @param delegate Delegate.
+ @return Returns initialized object.
+ @see TTMonitorOutDelegate
+ */
+- (id)initWithView:(UIView *)aView delegate:(id<TTMonitorOutDelegate>)delegate;
 
 //Future - does nothing to the view controller now...
 - (id)initWithViewController:(UIViewController *)aViewController;
 - (id)initWithViewController:(UIViewController *)aViewController delegate:(id<TTMonitorOutDelegate>)delegate;
 
+///---------------------------------------------------------------------------------------
+/// @name Display
+///---------------------------------------------------------------------------------------
 
+/** Starts up the detection of an external display and will send the view to the best available output on that display.
+ 
+ */
 - (void)displayExternalView;
+
+/**  Will become true when an external display is detected and the view is attached to it.
+ 
+ @return State of the External Display.
+ */
 - (BOOL)externalMonitor;
 
 @end
 
+///---------------------------------------------------------------------------------------
+/// @name Delegates
+///---------------------------------------------------------------------------------------
+/** TTMoitorOutDelegate 
+ */
 @protocol TTMonitorOutDelegate <NSObject>
 @required
+/** Notification of a Change in the state of the external display.  
+ 
+ @param window The window which is being desplayed on the external display. This will be nil if the external display has been disconnected 
+ */
 - (void)ExternalWindowDidChange:(UIWindow *)window;
 @optional
+/** Notifications for debugging 
+ 
+ @param message The debugging log messages. 
+ */
 - (void)logMessage:(NSString *)message;
 @end

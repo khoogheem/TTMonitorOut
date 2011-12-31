@@ -2,7 +2,7 @@ TTMonitor Out
 =================
 
 Push a view to the External Display of the iPhone/iPad.  This is based on multiple samples found but I didn't find as flexable. 
-Currently this will push the view to the best available display.  Works well with Airplay as well.
+Currently this will push the view to the best available display.  Works well with Video Mirror with AppleTV as well.
 
 Usage
 -----
